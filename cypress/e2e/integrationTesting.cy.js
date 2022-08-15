@@ -3,7 +3,7 @@
 
 describe("Integration Test",()=>{
     it("Integration Test",()=>{
-        cy.visit("/")
+        cy.visit(Cypress.env("URL"))
         cy.intercept({
             method: 'GET',
             url: 'https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=shetty'

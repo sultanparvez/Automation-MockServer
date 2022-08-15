@@ -3,7 +3,7 @@
 
 describe("Mock Server Responser",()=>{
     it("One Book",()=>{
-        cy.visit("/")
+        cy.visit(Cypress.env("URL"))
         cy.intercept({
             method: 'GET',
             url: 'https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=shetty'
@@ -29,7 +29,7 @@ describe("Mock Server Responser",()=>{
 })
 describe('Mock Request',()=>{
     it("Different Author",()=>{
-        cy.visit("/")
+        cy.visit(Cypress.env("URL"))
         cy.intercept( 'GET', 'https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=shetty',(req)=>{
             req.url='https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=malhotra'
             req.continue((res)=>{

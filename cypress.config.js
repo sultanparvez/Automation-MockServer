@@ -5,6 +5,9 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://rahulshettyacademy.com/angularAppdemo/"
+    baseUrl: "https://souvenir-memoir.herokuapp.com/post"
   },
+  env:{
+    URL: "https://rahulshettyacademy.com/angularAppdemo/"
+  }
 });
