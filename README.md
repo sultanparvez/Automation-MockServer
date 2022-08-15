@@ -12,7 +12,6 @@ npm test
 ```
 
 ## Included
-* cypress,
-* mochawesome-reporter
+* cypress
 
 
